@@ -12,8 +12,8 @@ public class DemoMavenApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(DemoMavenApplication.class, args);
-		
 	}
+	
 	
 	@GetMapping("/")
 	public String bienvenidoMaven() {
