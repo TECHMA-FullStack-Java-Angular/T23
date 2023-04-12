@@ -15,12 +15,12 @@ public class DemoGraddleApplication {
 	}
 	
 	@GetMapping("/")
-	public String bienvenidoMaven() {
-		return String.format("Proyecto Maven funciona correctamente.");
+	public String bienvenidoGraddle() {
+		return String.format("Proyecto Graddle funciona correctamente.");
 	}
 	
 	@GetMapping("/prueba")
-	public String pruebaMaven(@RequestParam(value="proyecto", defaultValue="Maven") String proyecto) {
+	public String pruebaMaven(@RequestParam(value="proyecto", defaultValue="Graddle") String proyecto) {
 		return String.format("Proyecto: %s!", proyecto);
 	}
 
